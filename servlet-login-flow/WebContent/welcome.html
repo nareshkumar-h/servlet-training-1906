@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h3>Welcome</h3>
+
+<form action="AddProductToCartServlet">
+<!--  Create a form ( Select Product name and enter quantity and click Submit) -->
+Select a Product:
+<select name="product_name" required>
+<option value="MAC">Mac</option>
+<option value="Lenova">Lenova </option>
+</select> <br/>
+Enter Quantity: <input type="number" name="quantity" required /><br/>
+<button type="submit">Add To Cart </button>
+
+<br/>
+<a href="OrderSummaryServlet">Pay</a>
+<br/>
+<a href="EmptyCartServlet">Empty Cart</a>
+<br/>
+<a href="LogoutServlet">Logout</a>
+</form>
+</body>
+</html>
